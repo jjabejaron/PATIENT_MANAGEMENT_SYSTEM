@@ -26,7 +26,7 @@ if ($result->num_rows > 0) {
     $familyMedicalHistory = $row['family_medical_history'];
     $pastMedications = $row['past_medications'];
     $pastOperations = $row['past_operations'];
-    // Add more fields as needed
+
 } else {
     echo "Patient not found.";
     exit();
@@ -54,7 +54,6 @@ if ($result->num_rows > 0) {
         <p><strong>Family Medical History:</strong> <?php echo $familyMedicalHistory; ?></p>
         <p><strong>Past Medications:</strong> <?php echo $pastMedications; ?></p>
         <p><strong>Past Operations:</strong> <?php echo $pastOperations; ?></p>
-        <!-- Add more fields as needed -->
     </div>
     <p><a href="patient_profile.php">Edit Personal Information</a></p>
     <p><a href="logout.php">Logout</a></p>
